@@ -1,0 +1,192 @@
+/*Variables*/
+
+:root {
+    --primario: #6884A8;;
+    --secundario: #c1dbfd;
+    --complementario: #cec78e;
+    --fuente-principal: 3.8rem;
+}
+
+/*Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--primario);
+    padding-top: 2.5rem;
+}
+
+/* Tipografía */
+
+h1 {
+    font-size: 4.5rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+/* Titulos */
+
+.titulo {
+    text-align: center;
+    font-size: var(--fuente-principal);
+    color: var(--negro);
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+/*Sombra*/
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.sombra {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: var(--secundario);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.705);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.705);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.705);
+}
+
+/*Izquierda*/
+
+.izquierda img{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: auto;
+    border-radius: 5rem;
+}
+
+.izquierda h2,
+.izquierda h3{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    text-align: center;
+}
+
+/*Información*/
+
+.icono__telefono,
+.icono__correo,
+.icono__direccion{
+    height: 6rem;
+    width: 35rem;
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.telefono span,
+.correo span,
+.direccion span {
+    background-color: var(--primario);
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: center;
+}
+
+/*Habilidades*/
+
+.skills h3{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: center;
+}
+
+.medidor__docker,
+.medidor__css,
+.medidor__html,
+.medidor__js,
+.medidor__py,
+.medidor__git,
+.medidor__cpp,
+.medidor__java,
+.medidor__sql{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    padding: 0 1rem 0.2rem 1rem;
+    height: 2rem;
+    background-color: var(--primario);
+}
+.icono__docker,
+.icono__css,
+.icono__html,
+.icono__js,
+.icono__py,
+.icono__git,
+.icono__otros{
+    height: 6rem;
+    width: 35rem;
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.otros__lenguajes {
+    font-weight: 700;
+    background-color: var(--primario);
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: center;
+}
+.skills span {
+    background-color: var(--primario);
+    text-align: left;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: left;
+    padding-top: 1rem;
+}
+
+/*Derecha*/
+.titulo__laboral h3,
+.titulo__academica h3,
+.titulo__habilidades h3,
+.titulo__idiomas h3,
+.titulo__cursos h3{
+    float: right;
+    width: 80rem;
+    border-bottom:solid 0.2rem var(--complementario);
+}
+dd,dl,dt{
+    float: right;
+    width: 80rem;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 0.5rem 0  0 1.5rem;
+}
+dt {
+    font-weight: 700;
+}
